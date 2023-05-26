@@ -1,0 +1,78 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    font-size: 14px;
+    font-style: normal;
+    padding-left: 0;
+    margin-top: 20px;
+  }
+  &__contact--adress {
+    color: $font-color-4;
+  }
+  &__contact--item {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  &__social {
+    padding-left: 70px;
+    padding-top: 12px;
+  }
+  &__social-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.1;
+    text-transform: uppercase;
+    color: font-color-4;
+  }
+  &__social-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  &__social-item {
+    max-width: 44px;
+    max-height: 44px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50px;
+    transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      background-color: $icon-background-color-hover;
+    }
+  }
+  &__social-icon {
+    fill: $icon-color-hover;
+    padding: 12px;
+  }
+  &__newsletter {
+    margin-left: 78px;
+  }
+  &__newsletter-form {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+  }
+  &__newsletter-input {
+    color: $font-color-4;
+    width: 358px;
+    height: 50px;
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    padding-left: 16px;
+  }
+  &__newsletter-btn {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+  }
+}

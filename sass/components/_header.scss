@@ -1,0 +1,36 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 0;
+  }
+  &__nav {
+    display: flex;
+  }
+  &__contact {
+    display: flex;
+    gap: 50px;
+  }
+  &__contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $font-color-3;
+    stroke: $icon-color-1;
+
+    transition-property: color, stroke;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $font-color-2;
+      stroke: $font-color-2;
+    }
+  }
+}

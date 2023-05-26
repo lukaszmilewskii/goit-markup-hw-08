@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+}
+body {
+  font-family: $font-primary;
+  color: $font-color-1;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4%;
+}
+// h2 {
+//   font-weight: 700;
+//   font-size: 36px;
+//   line-height: 1.2;
+//   text-align: center;
+//   letter-spacing: 0.03em;
+// }

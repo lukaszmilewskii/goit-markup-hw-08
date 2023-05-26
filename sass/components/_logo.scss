@@ -1,0 +1,13 @@
+.logo {
+  font-family: $font-secondary;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: $font-color-2;
+  &--header {
+    color: $font-color-1;
+  }
+  &--footer {
+    color: $font-color-4;
+  }
+}
