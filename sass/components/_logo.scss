@@ -4,6 +4,9 @@
   font-size: 26px;
   line-height: 1.2;
   color: $font-color-2;
+  @media screen and (max-width: 767px) {
+    padding: 0 15px;
+  }
   &--header {
     color: $font-color-1;
   }

@@ -3,6 +3,9 @@
   align-items: center;
   gap: 46px;
   margin-left: 93px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
   &__link {
     font-weight: 500;
     font-size: 14px;
