@@ -1,5 +1,11 @@
 .solutions-section {
   padding-top: 0;
+  @media (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+   display: none;
+  }
   &__list {
     display: flex;
     justify-content: space-between;

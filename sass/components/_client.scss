@@ -1,0 +1,36 @@
+.client {
+//   @media screen and (min-width: 481px) and (max-width: 767px) {
+//     flex-basis: 45%;
+//   }
+  @media screen and (max-width: 767px) {
+    flex-basis: 46%;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: 30%;
+  }
+  &__icon {
+    display: block;
+    fill: $icon-color-1;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    max-width: 170px;
+    max-height: 92px;
+    padding: 16px 32px;
+    transition-property: fill, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width: 767px) {
+      text-align: center;
+      max-width: 100%;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      text-align: center;
+      max-width: 100%;
+    }
+  }
+  &:hover,
+  &:focus {
+    fill: $font-color-2;
+    border-color: $font-color-2;
+  }
+}

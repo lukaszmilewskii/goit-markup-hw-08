@@ -1,5 +1,5 @@
-@import "./utils/variables";
-@import "./utils/reset";
+@import './utils/variables';
+@import './utils/reset';
 @import './components/container';
 @import './components/section';
 @import './components/logo';
@@ -11,8 +11,11 @@
 @import './components/modal';
 @import './components/form';
 @import './components/checkbox';
+@import './components/trumps-list';
+@import './components/trump';
 @import './components/trumps-section';
 @import './components/clients-section';
+@import './components/client';
 @import './components/filter';
 @import './components/footer-section';
 @import './components/footer';
@@ -20,4 +23,5 @@
 @import './components/product';
 @import './components/solutions-section';
 @import './components/team-section';
+@import './components/team-member';
 @import './components/team-social';

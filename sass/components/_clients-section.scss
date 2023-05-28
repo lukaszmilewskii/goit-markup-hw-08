@@ -4,22 +4,17 @@
     justify-content: space-between;
     margin-top: 50px;
     gap: 30px;
-  }
-  &__item {
-    display: block;
-    fill: $icon-color-1;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
-    max-width: 170px;
-    max-height: 92px;
-    padding: 16px 32px;
-    transition-property: fill, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-      fill: $font-color-2;
-      border-color: $font-color-2;
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+      margin-top: 30px;
+      gap: 30px;
+      padding: 0 15px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-wrap: wrap;
+      margin-top: 30px;
+      gap: 30px;
+      padding: 0 15px;
     }
   }
 }

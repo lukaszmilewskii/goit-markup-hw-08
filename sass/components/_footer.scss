@@ -1,6 +1,24 @@
 .footer {
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__logo {
+    @media screen and (max-width: 767px) {
+      flex-basis: 100%;
+      text-align: center;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-basis: 50%;
+      text-align: center;
+    }
+  }
 
   &__contact {
     display: flex;
@@ -10,6 +28,9 @@
     font-style: normal;
     padding-left: 0;
     margin-top: 20px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      gap: 8px;
+    }
   }
   &__contact--adress {
     color: $font-color-4;
@@ -20,6 +41,16 @@
   &__social {
     padding-left: 70px;
     padding-top: 12px;
+    @media screen and (max-width: 767px) {
+      flex-basis: 100%;
+      padding: 60px 0 0 0;
+      text-align: center;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-basis: 50%;
+      text-align: center;
+      padding: 5px 0 0 0;
+    }
   }
   &__social-title {
     font-weight: 700;
@@ -33,6 +64,12 @@
     justify-content: space-between;
     gap: 10px;
     margin-top: 20px;
+    @media screen and (max-width: 767px) {
+      justify-content: center;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      justify-content: center;
+    }
   }
   &__social-item {
     max-width: 44px;
@@ -53,11 +90,29 @@
   }
   &__newsletter {
     margin-left: 78px;
+    @media screen and (max-width: 767px) {
+      margin: 60px 0 0 0;
+      text-align: center;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin: 60px 0 0 0;
+      text-align: center;
+    }
   }
   &__newsletter-form {
     display: flex;
     gap: 12px;
     margin-top: 20px;
+    @media screen and (max-width: 767px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
   }
   &__newsletter-input {
     color: $font-color-4;
@@ -68,11 +123,27 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding-left: 16px;
+    @media screen and (max-width: 767px) {
+      flex-basis: 100%;
+      margin: 0 15px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-basis: 100%;
+      max-width: 450px;
+    }
   }
   &__newsletter-btn {
     display: flex;
     gap: 24px;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 767px) {
+      flex-basis: 100%;
+      max-width: 201px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      flex-basis: 100%;
+      max-width: 201px;
+    }
   }
 }

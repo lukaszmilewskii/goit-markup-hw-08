@@ -1,4 +1,14 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  // &--mobile {
+  //   @media  and (max-width: 767px) {
+  //     width: 480px;
+  //   }
+  // }
+  // &--tablet {
+  //   @media  and (min-width: 768px) and (max-width: 1199px) {
+  //     width: 768px;
+  //   }
+  // }
 }
